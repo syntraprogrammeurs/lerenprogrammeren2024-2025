@@ -18,5 +18,5 @@ if(beroep === "arbeider"){
     console.log("ambtenaar");
 }
 else{
-    console.log("werkzoekend");
+    console.log("werkzoekende!");
 }
