@@ -66,3 +66,6 @@ for(let i = 1; i<=hoeveelGetallen;i++){
     som = som +getal;
 }
 console.log(som);
+
+//Schrijf een programma dat de som van alle oneven getallen tussen 1 en 50 berekent.
+//Schrijf een programma dat de getallen van 10 tot 1 in omgekeerde volgorde afdrukt.
