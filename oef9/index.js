@@ -21,6 +21,3 @@ if(bmi < 18.5){
 }
 
 
-/*
-* Schrijf een programma dat het totale bedrag berekent dat je moet betalen in een winkel op basis van het aantal producten dat je koopt en de prijs per product. Als je meer dan 10 producten koopt, krijg je 10% korting, anders betaal je de volle prijs.
-* */
