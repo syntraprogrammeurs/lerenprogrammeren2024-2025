@@ -1,22 +1,15 @@
 /*
-* Voorbeeld 2: Beroep op basis van gebruikersinvoer
-De gebruiker wordt gevraagd hun naam en beroep in te voeren. Afhankelijk van de invoer toont het programma een aangepast bericht.
-Dit is een voorbeeld van een if - else if - else structuur waarin meerdere condities worden gecontroleerd
+* Oefening 3: (tip: maak gebruik van de logische operatoren)
+* Schrijf een programma dat controleert of een gegeven jaar een schrikkeljaar is.
 *
-let naam = prompt('Geef uw naam in:');
-let beroep = prompt('Geef uw beroep in, maak een keuze: bediende, arbeider, werkzoekend');
+* (Een jaar is een schrikkeljaar als het (deelbaar is door 4, maar dit jaar is niet door 100 deelbaar), behalve als het deelbaar is door 400.)
 
 * */
-let naam = prompt('Geef uw naam in:');
-let beroep = prompt('Geef uw beroep in, maak een keuze: bediende, arbeider,ambtenaar, werkzoekend');
+let jaar = parseInt(prompt('Geef een schrikkeljaar')); //2024
 
-if(beroep === "arbeider"){
-    console.log(`Uw naam is ${naam} en uw beroep is ${beroep}`);
-}else if(beroep === "bediende"){
-    console.log("bediende");
-}else if(beroep === "ambtenaar"){
-    console.log("ambtenaar");
-}
-else{
-    console.log("werkzoekende!");
+//testen van mijn logica
+if ((jaar%4 === 0 && jaar%100 !== 0) || (jaar % 400 === 0)){
+    console.log(`${jaar} is een schrikkeljaar`);
+}else{
+    console.log(`${jaar} is geen schrikkeljaar`);
 }
